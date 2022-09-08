@@ -3,11 +3,11 @@
 using namespace std;
 
 int main(){
-		float num, unitPrice, taxPern, sumPrice, vat, disPern, discount, amountPayable;
+		float num, unitPrice, taxPern, sumPrice, vat, discount, amountPayable;
     cout << "How many items would you like to buy? ";
-    cin >> num;
+    cin >> num; 
     cout << "Enter tax Percentage: ";
-    cin >> taxPern;
+    cin >> taxPern; /*the percentage of tax percentage*/
     unitPrice = 10;
     sumPrice = num * unitPrice;
     vat = sumPrice * (taxPern/100);
@@ -35,3 +35,12 @@ int main(){
     cout << "Total amount payable (tax included): " << amountPayable;
 
     return 0;
+	
+	/*1.num: refers to the number of items bought by the customer
+	  2.unitPrice: is the price per item 
+	  3.taxPern: is the tax percentage entered by the user
+	  4.sumPrice: the total amount of items bought (ie. the number of items times the unit price)
+	  5.vat: the value added tax that is added to the total amount the customer is suppose to pay(ie. the sumPrice)
+	  6.discount: the amount deducted from the original amount the customer was supposed to pay due to certain amount of items bought
+	  7.amountPayabe: this the amount actual amount the customer will pay after the discount has been subtracted from it and the vat has been added*/
+	
